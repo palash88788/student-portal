@@ -1,0 +1,173 @@
+<div class="page-wrapper-ext">
+        <!--Page Body Start-->
+        <div class="page-body-wrapper">
+            <!--Page Sidebar Start-->
+            <div class="page-sidebar custom-scrollbar">
+            </div>
+            <!--Page Sidebar Ends-->
+            <div class="page-body">
+                <div class="container-fluid">
+               
+                    <div class="page-header">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="head-adhoc" style="padding-left: 6px;">
+                                <h3>Notifications</h3>
+                            </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Container-fluid starts -->
+            <div class="vd_content-section clearfix">
+                <div class="row">
+             
+                    <div class="col-sm-12">
+                        <div class="tabs">
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#profile-tab" role="tab" aria-controls="nav-home" aria-selected="true">From University</a>
+    
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#location-tab" role="tab" aria-controls="nav-contact" aria-selected="false">From Student</a>
+    
+                            </div>
+                            <div class="tab-content">
+                                <div id="profile-tab" class="tab-pane active">
+                                    <div class="pd-20">
+                                     
+                                        <div class="row" *ngFor= "let uni of university">
+                                           
+    
+    
+                                          
+  
+                <div class="col-sm-12 col-md-12">
+    
+                    <div class="card job-card">
+                        <div class="card-body">
+                      
+                            
+                            <div class="row" style="padding-top: 8px;">
+                                    <div class="col-sm-12">
+                                            <div class="row mgbt-xs-0">
+                                                <label class="col-xs-5 control-label"><strong> From:</strong></label>
+                                            <div class="col-xs-7 controls">{{uni.From}}</div>
+                                                <!-- col-sm-10 -->
+                                            </div>
+                                        </div>
+                                 
+                                    <div class="col-sm-12">
+                                            <div class="row mgbt-xs-0">
+                                                <label class="col-xs-5 control-label"><strong>Date:</strong></label>
+                                            <div class="col-xs-7 controls">{{uni.Date}}</div>
+                                                <!-- col-sm-10 -->
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-12">
+                                                <div class="row mgbt-xs-0">
+                                                    <label class="col-xs-5 control-label"><strong>Samaster:</strong></label>
+                                                <div class="col-xs-7 controls">{{uni.Message}}</div>
+                                                    <!-- col-sm-10 -->
+                                                </div>
+                                            </div>
+                            </div>
+                   
+                    </div>
+                </div>
+           
+        </div>
+    
+                                       
+    
+                                         
+    
+                                        </div>
+    
+                                        <hr class="pd-10">
+                                     
+                                    </div>
+                                    <!-- pd-20 -->
+                                    </div>
+                        
+                                <!-- home-tab -->
+    
+    
+                                <div id="location-tab" class="tab-pane">
+                                        <div class="pd-20">
+                                        <div class="row" *ngFor= "let stu of students">
+                                           
+    
+    
+                                          
+  
+                                                <div class="col-sm-12 col-md-12">
+                                    
+                                                    <div class="card job-card">
+                                                        <div class="card-body">
+                                                      
+                                                            
+                                                            <div class="row" style="padding-top: 8px;">
+                                                                    <div class="col-sm-12">
+                                                                            <div class="row mgbt-xs-0">
+                                                                                <label class="col-xs-5 control-label"><strong> From:</strong></label>
+                                                                            <div class="col-xs-7 controls">{{stu.From}}</div>
+                                                                                <!-- col-sm-10 -->
+                                                                            </div>
+                                                                        </div>
+                                                                 
+                                                                    <div class="col-sm-12">
+                                                                            <div class="row mgbt-xs-0">
+                                                                                <label class="col-xs-5 control-label"><strong>Date:</strong></label>
+                                                                            <div class="col-xs-7 controls">{{stu.Date}}</div>
+                                                                                <!-- col-sm-10 -->
+                                                                            </div>
+                                                                        </div>
+
+                                                                         
+                                                                    <div class="col-sm-12">
+                                                                            <div class="row mgbt-xs-0">
+                                                                                <label class="col-xs-5 control-label"><strong>Date:</strong></label>
+                                                                            <div class="col-xs-7 controls">{{stu.Date}}</div>
+                                                                                <!-- col-sm-10 -->
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        
+                                                                        <div class="col-sm-12">
+                                                                                <div class="row mgbt-xs-0">
+                                                                                    <label class="col-xs-5 control-label"><strong>Samaster:</strong></label>
+                                                                                <div class="col-xs-7 controls">{{stu.Message}}</div>
+                                                                                    <!-- col-sm-10 -->
+                                                                                </div>
+                                                                            </div>
+                                                            </div>
+                                                   
+                                                    </div>
+                                                </div>
+                                           
+                                        </div>
+                                    
+                                                                       
+                                    
+                                                                         
+                                    
+                                                                        </div>
+                                        </div>
+                                    
+                                  
+                                </div>
+    
+                        
+    
+    
+                    
+                            </div>
+                            <!-- tab-content -->
+                        </div>
+                        <!-- tabs-widget -->
+                    </div>
+                </div>
+                <!-- row -->
+            </div>

@@ -1,0 +1,33 @@
+.container_full {
+    transition: .5s;
+    padding-left: 250px;
+    padding-top: 6em;
+}
+
+.active-menu .container_full {
+    padding-left: 20px;
+}
+.container_full .content_wrapper {
+    padding: 0 20px;
+}
+a:hover {
+    text-decoration: none;
+}
+.cards a {
+    width: 100%;
+}
+@media (max-width: 767px){
+.container_full {
+    padding-left: 0;
+}
+.active-menu .container_full {
+    padding-left: 0px;
+}
+
+
+}
+@media (max-width: 500px){
+    .container_full {
+        padding-left: 25px;
+    }
+}

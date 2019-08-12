@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="cards" *ngFor = "let cls of class" >
+      <a href="javascript:;" [routerLink]="['/classes/student-list',cls.id]">
+      <div class="card-item">
+       
+        <div class="card-info">
+          <h2 class="card-title">{{cls.calss_name}}</h2>
+         
+        </div>
+      </div>
+      </a>
+    </div>
+   
+  </div>

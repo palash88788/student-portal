@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="cards" *ngFor = "let str of stream" >
+      <a href="javascript:;" [routerLink]="['/stream/class',str.stream_url]">
+      <div class="card-item">
+       
+        <div class="card-info">
+          <h2 class="card-title">{{str.stream_name}}</h2>
+         
+        </div>
+      </div>
+    </a>
+    </div>
+   
+  </div>
