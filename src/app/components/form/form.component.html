@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <div class="Rtable Rtable--5cols Rtable--collapse">
+    <div class="Rtable-row Rtable-row--head">
+      <div class="Rtable-cell date-cell column-heading">ID</div>
+      <div class="Rtable-cell topic-cell column-heading">Image</div>
+      <div class="Rtable-cell access-link-cell column-heading">Name</div>
+      <div class="Rtable-cell replay-link-cell column-heading">Subject 1</div>
+      <div class="Rtable-cell pdf-cell column-heading">Subject 2</div>
+      <div class="Rtable-cell replay-link-cell column-heading">Subject 3</div>
+      <div class="Rtable-cell pdf-cell column-heading">Subject 4</div>
+      <div class="Rtable-cell pdf-cell column-heading">View Detail</div>
+    </div>
+  <div id="contain">
+    <div class="Rtable-row" *ngFor = "let detail of studentAttandence">
+      <div class="Rtable-cell date-cell">
+        <div class="Rtable-cell--heading">ID</div>
+        <div class="Rtable-cell--content date-content">{{detail.user}}</div>
+      </div>
+      <div class="Rtable-cell topic-cell">
+        <div class="Rtable-cell--content title-content"><img src="assets/img/profile.png" style="width: 29px;"></div>
+      </div>
+      <div class="Rtable-cell access-link-cell">
+        <div class="Rtable-cell--heading">Name</div>
+        <div class="Rtable-cell--content access-link-content">{{detail.student_name}}</div>
+      </div>
+      <div class="Rtable-cell access-link-cell">
+        <div class="Rtable-cell--heading">Subject 1</div>
+        <div class="Rtable-cell--content access-link-content">{{detail.subjectone}}</div>
+      </div>
+      <div class="Rtable-cell replay-link-cell">
+        <div class="Rtable-cell--heading">Subject 2</div>
+        <div class="Rtable-cell--content replay-link-content">{{detail.subjecttwo}}</div>
+      </div>
+      <div class="Rtable-cell Rtable-cell--foot pdf-cell">
+        <div class="Rtable-cell--heading">Subject 3</div>
+        <div class="Rtable-cell--content pdf-content">{{detail.subjectthree}}</div>
+      </div>
+      <div class="Rtable-cell replay-link-cell">
+        <div class="Rtable-cell--heading">Subject 4</div>
+        <div class="Rtable-cell--content replay-link-content">{{detail.subjectfour}}</div>
+      </div>
+      <div class="Rtable-cell Rtable-cell--foot pdf-cell">
+        <div class="Rtable-cell--heading">View Detail</div>
+        <div class="Rtable-cell--content pdf-content"><a href="javascript:;" [routerLink]="['/profile']" style="color: #2b768d; font-size: 12px;"><i class="fa fa-eye" aria-hidden="true"></i></a></div>
+      </div>
+    </div>
+
+  </div>  
+    
+  
+  </div>
+</div>

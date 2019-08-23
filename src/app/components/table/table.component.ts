@@ -1,16 +1,10 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { pipe } from '../../pipes/filter.model'
-import * as $ from 'jquery';
-
+import { Component, OnInit } from '@angular/core';
 @Component({
-  selector: 'app-student-list',
-  templateUrl: './student-list.component.html',
-  styleUrls: ['./student-list.component.css']
+  selector: 'app-table',
+  templateUrl: './table.component.html',
+  styleUrls: ['./table.component.css']
 })
-export class studentlistComponent implements OnInit {
-	public nameSearch: pipe;
-
+export class tableComponent implements OnInit {
   studentAttandence =
 	[
     {    id:1,
@@ -257,20 +251,19 @@ export class studentlistComponent implements OnInit {
 											}
 									
 	]
-	p: number = 1;
-    collection: any[] = this.studentAttandence;  
-	class_id;	
-  constructor(private route: ActivatedRoute) {
-	this.class_id = this.route.snapshot.params['class_id'];
+  constructor() {
+
    }
 
   ngOnInit() {
 
-	this.nameSearch = new pipe();
-	
+ 
 
  
+   
+   
+        
+ 
   
-	}
-
+    }
   }

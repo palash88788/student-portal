@@ -8,6 +8,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 
 import { ClassComponent } from './components/class/class.component';
 import { notificationComponent } from './components/notification/notification.component';
+import { tableComponent } from './components/table/table.component';
+import { formComponent } from './components/form/form.component';
 
 
 
@@ -39,7 +41,15 @@ const routes: Routes = [
         path: 'notification',
         component: notificationComponent
       },
-  
+  {
+    path: 'table',
+    component: tableComponent
+  },
+  {
+    path: 'form',
+    component: formComponent
+
+  }
     
 
     

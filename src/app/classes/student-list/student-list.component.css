@@ -240,3 +240,26 @@ p{
 .pagination {
   justify-content: flex-end;
 }
+#contain {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.action_btn h2 {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+

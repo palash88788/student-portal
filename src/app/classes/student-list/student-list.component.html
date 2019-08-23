@@ -21,10 +21,12 @@
         </thead>
 
      
-
+        
         <tbody>
-
-            <tr *ngFor = "let detail of studentAttandence | personSearch :nameSearch  | paginate: { itemsPerPage: 2, currentPage: p }">
+         
+            <tr *ngFor = "let detail of studentAttandence | personSearch :nameSearch  | paginate: { itemsPerPage: 10, currentPage: p }"> 
+                
+      
                 <td><img src="assets/img/profile.png" style="width: 29px;"></td>
       
                   <td>{{detail.user}}</td>
@@ -38,7 +40,7 @@
                 <td>
                    
                     <div class="action_btn ">
-                      <a href="javascript:;" [routerLink]="['/profile']" ><p style="color: #2b768d;"><i class="fa fa-eye" aria-hidden="true"></i> </p>
+                      <a href="javascript:;" [routerLink]="['/profile']" ><h2 style="color: #2b768d;"><i class="fa fa-eye" aria-hidden="true"></i> </h2>
 </a>
                     </div>
 
@@ -48,12 +50,12 @@
             </tr>
        
 
-
         </tbody>
-
+    
      
     </table>
+</div>
     <div class="pagination">
     <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>
-</div>
+

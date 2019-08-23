@@ -18,8 +18,10 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { HomeComponent } from './components/home/home.component';
 import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 import { notificationComponent } from './components/notification/notification.component';
-
-
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { tableComponent } from './components/table/table.component';
+import { formComponent } from './components/form/form.component';
 
 
 
@@ -37,6 +39,8 @@ import { notificationComponent } from './components/notification/notification.co
     ClassComponent,
     SearchPipe,
     studentlistComponent,
+    tableComponent,
+    formComponent
 
 
   ],
@@ -47,7 +51,10 @@ import { notificationComponent } from './components/notification/notification.co
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    NgxPageScrollModule,
+ 
+    NgxPageScrollCoreModule.forRoot({_logLevel: 3}),
   ],
   providers: [],
   bootstrap: [AppComponent]
